@@ -1,10 +1,8 @@
 import shieldLogo from "@/assets/shield-logo.png";
 import { Link } from "react-router-dom";
 import { ShieldCheck } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="relative">
+  return <footer className="relative">
       {/* Elegant gold line separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
       
@@ -15,11 +13,7 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               {/* Logo and company name */}
               <div className="flex items-center gap-3">
-                <img 
-                  src={shieldLogo} 
-                  alt="Zolara Holdings" 
-                  className="w-8 h-8 object-contain opacity-60"
-                />
+                <img alt="Zolara Holdings" className="w-8 h-8 object-contain opacity-60" src="/lovable-uploads/3b82dc33-96df-45f8-9e67-2223790513cd.png" />
                 <p className="font-heading text-xs tracking-[0.3em] text-primary">
                   ZOLARA HOLDINGS LTD
                 </p>
@@ -47,18 +41,13 @@ const Footer = () => {
               </p>
               
               {/* Privacy Policy Link */}
-              <Link 
-                to="/privacy-policy" 
-                className="text-xs text-muted-foreground hover:text-primary transition-colors duration-300"
-              >
+              <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-300">
                 Privacy Policy
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
