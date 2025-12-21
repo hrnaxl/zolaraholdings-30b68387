@@ -67,26 +67,35 @@
     --sidebar-ring: 43 74% 49%;
   }
 
-  .dark {
-    --background: 0 0% 4%;
-    --foreground: 43 30% 90%;
-    --card: 0 0% 6%;
-    --card-foreground: 43 30% 90%;
-    --popover: 0 0% 6%;
-    --popover-foreground: 43 30% 90%;
-    --primary: 43 74% 49%;
-    --primary-foreground: 0 0% 4%;
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 43 30% 90%;
-    --muted: 0 0% 12%;
-    --muted-foreground: 43 10% 60%;
-    --accent: 43 74% 49%;
-    --accent-foreground: 0 0% 4%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 43 30% 20%;
-    --input: 0 0% 12%;
-    --ring: 43 74% 49%;
+  /* Light theme */
+  .light-theme {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 43 74% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 0 0% 8%;
+
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 43 74% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 43 30% 80%;
+    --input: 0 0% 92%;
+    --ring: 43 74% 42%;
+
+    --charcoal: 0 0% 96%;
+    --charcoal-light: 0 0% 94%;
   }
 }
 
@@ -133,7 +142,18 @@
   }
 
   .section-padding {
-    @apply py-24 md:py-32 lg:py-40;
+    @apply py-32 md:py-40 lg:py-48;
+  }
+
+  .scroll-fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .scroll-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .container-luxury {

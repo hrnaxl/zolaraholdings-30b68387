@@ -1,7 +1,11 @@
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const CEOSection = () => {
+  const { ref, isVisible } = useScrollAnimation(0.2);
+
   return (
     <section className="section-padding bg-background relative">
-      <div className="container-luxury">
+      <div ref={ref} className={`container-luxury scroll-fade-in ${isVisible ? 'visible' : ''}`}>
         <div className="max-w-4xl mx-auto">
           {/* Section label */}
           <div className="text-center mb-12">
@@ -24,15 +28,15 @@ const CEOSection = () => {
             </span>
             
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed pl-8 md:pl-12">
-              <p className="text-lg md:text-xl">
+              <p className="text-lg md:text-xl lg:text-2xl">
                 As the founder and Executive Director, I built Zolara Holdings with one purpose—to create businesses that last. Our goal is not just to open companies, but to build strong, disciplined brands that will serve communities and stand the test of time.
               </p>
               
-              <p className="text-lg md:text-xl">
+              <p className="text-lg md:text-xl lg:text-2xl">
                 Zolara Holdings is built on structure and vision. We believe in protecting assets, developing people, and creating opportunities. Every business we launch is part of a bigger plan: long-term growth, wealth creation, and excellence.
               </p>
               
-              <p className="text-lg md:text-xl">
+              <p className="text-lg md:text-xl lg:text-2xl">
                 I am proud of where we are, and even more excited about where we are going.
               </p>
             </div>
