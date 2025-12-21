@@ -1,48 +1,48 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const CEOSection = () => {
-  const { ref, isVisible } = useScrollAnimation(0.2);
+  const { ref, isVisible } = useScrollAnimation(0.15);
 
   return (
     <section className="section-padding bg-background relative">
-      <div ref={ref} className={`container-luxury scroll-fade-in ${isVisible ? 'visible' : ''}`}>
+      <div ref={ref} className="container-luxury">
         <div className="max-w-4xl mx-auto">
           {/* Section label */}
           <div className="text-center mb-12">
-            <span className="inline-block text-xs tracking-[0.3em] text-primary uppercase mb-6">
+            <span className={`inline-block text-xs tracking-[0.3em] text-primary uppercase mb-6 scroll-headline ${isVisible ? 'visible' : ''}`}>
               Leadership
             </span>
             
-            <h2 className="font-heading text-3xl md:text-4xl tracking-wide text-foreground">
+            <h2 className={`font-heading text-3xl md:text-4xl tracking-wide text-foreground scroll-headline stagger-1 ${isVisible ? 'visible' : ''}`}>
               Message From The Executive Director
             </h2>
             
-            <div className="w-16 h-px bg-primary mx-auto mt-8" />
+            <div className={`w-16 h-px bg-primary mx-auto mt-8 scroll-fade-in stagger-2 ${isVisible ? 'visible' : ''}`} />
           </div>
           
           {/* Quote content */}
           <div className="relative">
             {/* Opening quote mark */}
-            <span className="absolute -top-8 -left-4 text-8xl text-primary/20 font-heading font-semibold select-none">
+            <span className={`absolute -top-8 -left-4 text-8xl text-primary/20 font-heading font-semibold select-none scroll-headline stagger-2 ${isVisible ? 'visible' : ''}`}>
               "
             </span>
             
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed pl-8 md:pl-12">
-              <p className="text-lg md:text-xl lg:text-2xl">
+              <p className={`text-lg md:text-xl lg:text-2xl scroll-slide-up stagger-3 ${isVisible ? 'visible' : ''}`}>
                 As the founder and Executive Director, I built Zolara Holdings with one purpose—to create businesses that last. Our goal is not just to open companies, but to build strong, disciplined brands that will serve communities and stand the test of time.
               </p>
               
-              <p className="text-lg md:text-xl lg:text-2xl">
+              <p className={`text-lg md:text-xl lg:text-2xl scroll-slide-up stagger-4 ${isVisible ? 'visible' : ''}`}>
                 Zolara Holdings is built on structure and vision. We believe in protecting assets, developing people, and creating opportunities. Every business we launch is part of a bigger plan: long-term growth, wealth creation, and excellence.
               </p>
               
-              <p className="text-lg md:text-xl lg:text-2xl">
+              <p className={`text-lg md:text-xl lg:text-2xl scroll-slide-up stagger-5 ${isVisible ? 'visible' : ''}`}>
                 I am proud of where we are, and even more excited about where we are going.
               </p>
             </div>
             
             {/* Signature */}
-            <div className="mt-12 pl-8 md:pl-12">
+            <div className={`mt-12 pl-8 md:pl-12 scroll-fade-in stagger-6 ${isVisible ? 'visible' : ''}`}>
               <div className="w-24 h-px bg-primary/50 mb-6" />
               <p className="font-heading text-xl text-primary tracking-wide">
                 Haruna Salifu
