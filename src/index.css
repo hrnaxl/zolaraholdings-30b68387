@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
@@ -55,7 +55,7 @@
 
     /* Typography */
     --font-heading: 'Cinzel', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
     --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 43 30% 90%;
@@ -149,7 +149,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply font-heading font-bold;
   }
 }
 
