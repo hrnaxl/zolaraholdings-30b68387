@@ -36,7 +36,7 @@ const HeroSection = () => {
         
         {/* Main headline */}
         <h1 
-          className={`font-heading text-4xl md:text-5xl lg:text-7xl tracking-wide mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          className={`font-heading text-5xl md:text-6xl lg:text-8xl tracking-wide mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           style={{ transitionDelay: '0.3s' }}
         >
           <span className="block text-foreground">Building Businesses</span>
@@ -45,7 +45,7 @@ const HeroSection = () => {
         
         {/* Sub-headline */}
         <p 
-          className={`text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 font-light leading-relaxed transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          className={`text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-14 font-light leading-relaxed transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           style={{ transitionDelay: '0.5s' }}
         >
           Zolara Holdings is a strategic investment and operating company focused on investing, building, and scaling businesses across Ghana and Africa.

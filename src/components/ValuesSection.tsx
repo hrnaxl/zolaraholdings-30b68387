@@ -1,3 +1,5 @@
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const values = [
   { title: "Integrity", description: "Honesty in every decision" },
   { title: "Focus", description: "Disciplined execution" },
@@ -6,9 +8,11 @@ const values = [
 ];
 
 const ValuesSection = () => {
+  const { ref, isVisible } = useScrollAnimation(0.2);
+
   return (
     <section className="section-padding bg-background relative">
-      <div className="container-luxury">
+      <div ref={ref} className={`container-luxury scroll-fade-in ${isVisible ? 'visible' : ''}`}>
         <div className="text-center mb-16">
           <span className="inline-block text-xs tracking-[0.3em] text-primary uppercase mb-6">
             What Guides Us
@@ -21,24 +25,23 @@ const ValuesSection = () => {
           <div className="w-16 h-px bg-primary mx-auto mt-8" />
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-          {values.map((value, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
+          {values.map((value) => (
             <div 
               key={value.title}
               className="text-center group"
-              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 border border-primary/30 flex items-center justify-center group-hover:border-primary group-hover:shadow-[0_0_20px_hsl(43_74%_49%/0.2)] transition-all duration-500">
-                <span className="font-heading text-2xl text-primary">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-6 border border-primary/30 flex items-center justify-center group-hover:border-primary group-hover:shadow-[0_0_20px_hsl(43_74%_49%/0.2)] transition-all duration-500">
+                <span className="font-heading text-xl sm:text-2xl text-primary">
                   {value.title.charAt(0)}
                 </span>
               </div>
               
-              <h4 className="font-heading text-lg tracking-wide text-foreground mb-2">
+              <h4 className="font-heading text-base sm:text-lg tracking-wide text-foreground mb-2">
                 {value.title}
               </h4>
               
-              <p className="text-sm text-muted-foreground font-light">
+              <p className="text-xs sm:text-sm text-muted-foreground font-light">
                 {value.description}
               </p>
             </div>
