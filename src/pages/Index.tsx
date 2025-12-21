@@ -13,11 +13,17 @@ const Index = () => {
     <main className="bg-background">
       <Header />
       <HeroSection />
+      <div className="section-divider" />
       <AboutSection />
+      <div className="section-divider" />
       <CEOSection />
+      <div className="section-divider" />
       <MissionVisionSection />
+      <div className="section-divider" />
       <ValuesSection />
+      <div className="section-divider" />
       <SubsidiariesSection />
+      <div className="section-divider" />
       <ContactSection />
       <Footer />
     </main>

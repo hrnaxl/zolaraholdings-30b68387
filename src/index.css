@@ -70,33 +70,69 @@
   /* Light theme */
   .light-theme {
     --background: 0 0% 98%;
-    --foreground: 0 0% 8%;
+    --foreground: 0 0% 7%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 7%;
 
-    --primary: 43 74% 42%;
+    --primary: 43 51% 46%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 94%;
-    --secondary-foreground: 0 0% 8%;
+    --secondary-foreground: 0 0% 7%;
 
     --muted: 0 0% 92%;
-    --muted-foreground: 0 0% 40%;
+    --muted-foreground: 0 0% 25%;
 
-    --accent: 43 74% 42%;
+    --accent: 43 51% 46%;
     --accent-foreground: 0 0% 100%;
 
-    --border: 43 30% 80%;
+    --border: 0 0% 85%;
     --input: 0 0% 92%;
-    --ring: 43 74% 42%;
+    --ring: 43 51% 46%;
 
     --charcoal: 0 0% 96%;
     --charcoal-light: 0 0% 94%;
+
+    /* Light theme specific gold variants */
+    --gold: 43 51% 46%;
+    --gold-light: 43 51% 55%;
+    --gold-dark: 43 51% 38%;
+
+    /* Light theme shadow for logo */
+    --shadow-logo: 0 2px 8px hsl(0 0% 0% / 0.15);
+
+    /* Section divider */
+    --divider-color: 0 0% 88%;
   }
+}
+
+/* Light theme typography adjustments */
+.light-theme body {
+  font-size: 1.125rem;
+}
+
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+}
+
+/* Light theme logo shadow */
+.light-theme .logo-with-shadow {
+  filter: drop-shadow(0 2px 6px hsl(0 0% 0% / 0.2));
+}
+
+/* Light theme section divider */
+.light-theme .section-divider {
+  border-top: 1px solid hsl(var(--divider-color));
 }
 
 @layer base {
