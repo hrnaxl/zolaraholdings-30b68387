@@ -13,6 +13,18 @@ const HeroSection = () => {
       {/* Subtle radial glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(43_74%_49%/0.05)_0%,_transparent_70%)]" />
       
+      {/* Gold shimmer texture behind headline */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div 
+          className="w-[800px] h-[400px] opacity-[0.08] animate-gold-shimmer"
+          style={{
+            background: 'linear-gradient(90deg, transparent 0%, hsl(43, 74%, 49%) 25%, hsl(43, 74%, 65%) 50%, hsl(43, 74%, 49%) 75%, transparent 100%)',
+            backgroundSize: '200% 100%',
+            filter: 'blur(60px)',
+          }}
+        />
+      </div>
+      
       {/* Decorative lines */}
       <div className="absolute top-1/4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       <div className="absolute bottom-1/4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
@@ -26,7 +38,7 @@ const HeroSection = () => {
         </div>
         
         {/* Main headline */}
-        <h1 className={`font-heading text-5xl md:text-6xl lg:text-8xl tracking-wide mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
+        <h1 className={`font-heading font-bold text-5xl md:text-6xl lg:text-8xl tracking-wide mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
         transitionDelay: '0.3s'
       }}>
           <span className="block text-foreground">Building Businesses</span>

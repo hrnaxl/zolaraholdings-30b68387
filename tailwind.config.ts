@@ -69,7 +69,7 @@ export default {
       },
       fontFamily: {
         heading: ['Cinzel', 'serif'],
-        body: ['DM Sans', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -94,8 +94,12 @@ export default {
           to: { opacity: "1" },
         },
         shimmer: {
-          "0%, 100%": { opacity: "0.5" },
-          "50%": { opacity: "1" },
+          "0%, 100%": { opacity: "0.3" },
+          "50%": { opacity: "0.6" },
+        },
+        "gold-shimmer": {
+          "0%": { backgroundPosition: "200% 0" },
+          "100%": { backgroundPosition: "-200% 0" },
         },
       },
       animation: {
@@ -104,6 +108,7 @@ export default {
         "fade-up": "fadeUp 0.8s ease-out forwards",
         "fade-in": "fadeIn 1s ease-out forwards",
         shimmer: "shimmer 3s ease-in-out infinite",
+        "gold-shimmer": "gold-shimmer 8s linear infinite",
       },
     },
   },
