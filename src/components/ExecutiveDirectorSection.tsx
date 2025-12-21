@@ -1,4 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import executiveDirectorPhoto from "@/assets/executive-director.jpg";
 
 const ExecutiveDirectorSection = () => {
   const { ref, isVisible } = useScrollAnimation(0.1);
@@ -32,15 +33,11 @@ const ExecutiveDirectorSection = () => {
                 
                 {/* Portrait placeholder */}
                 <div className="relative bg-card border border-border/50 aspect-[3/4] flex items-center justify-center overflow-hidden">
-                  {/* Placeholder content */}
-                  <div className="text-center p-8">
-                    <div className="w-20 h-20 mx-auto mb-4 border border-primary/30 flex items-center justify-center">
-                      <span className="font-heading text-3xl text-primary">HS</span>
-                    </div>
-                    <p className="text-xs text-muted-foreground/60 tracking-wider uppercase">
-                      Portrait Coming Soon
-                    </p>
-                  </div>
+                  <img 
+                    src={executiveDirectorPhoto} 
+                    alt="Haruna Salifu - Executive Director" 
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
               </div>
             </div>
