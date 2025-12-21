@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className={`mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
         transitionDelay: '0.1s'
       }}>
-          <img alt="Zolara Holdings Emblem" className="w-24 h-24 mx-auto object-contain" src="/lovable-uploads/f84d2e3d-7df2-4629-8970-ef707906a355.jpg" />
+          <img alt="Zolara Holdings Emblem" className="w-24 h-24 mx-auto object-contain" src="/lovable-uploads/9e66a9b9-949c-4802-9a7c-751c4717f986.png" />
         </div>
         
         {/* Main headline */}
