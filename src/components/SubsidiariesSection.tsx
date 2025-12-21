@@ -6,26 +6,31 @@ const subsidiaries = [
     name: "Zolara Beauty Studio",
     description: "Luxury beauty services",
     icon: Sparkles,
+    url: "https://zolarasalon.com",
   },
   {
     name: "Zolara Pharma & Wellness",
     description: "Pharmacy and wellness retail",
     icon: Heart,
+    url: null,
   },
   {
     name: "Zolara Properties",
     description: "Real estate investment",
     icon: Building2,
+    url: null,
   },
   {
     name: "Zolara Logistics",
     description: "Supply and distribution planning",
     icon: Truck,
+    url: null,
   },
   {
     name: "Zolara Hospitality",
     description: "Future accommodation development",
     icon: Hotel,
+    url: null,
   },
 ];
 
@@ -61,9 +66,20 @@ const SubsidiariesSection = () => {
                 style={{ color: 'hsl(43, 74%, 49%)' }}
               />
               
-              <h4 className="font-heading text-lg sm:text-xl tracking-wide text-foreground mb-3">
-                {subsidiary.name}
-              </h4>
+              {subsidiary.url ? (
+                <a 
+                  href={subsidiary.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-lg sm:text-xl tracking-wide text-foreground mb-3 block no-underline hover:text-primary transition-colors duration-300 cursor-pointer"
+                >
+                  {subsidiary.name}
+                </a>
+              ) : (
+                <h4 className="font-heading text-lg sm:text-xl tracking-wide text-foreground mb-3">
+                  {subsidiary.name}
+                </h4>
+              )}
               
               <p className="text-muted-foreground font-light text-sm sm:text-base">
                 {subsidiary.description}
