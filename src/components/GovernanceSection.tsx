@@ -20,22 +20,22 @@ const pillars = [
 ];
 
 const GovernanceSection = () => {
-  const { ref, isVisible } = useScrollAnimation(0.2);
+  const { ref, isVisible } = useScrollAnimation(0.15);
 
   return (
     <section className="section-padding bg-charcoal-light relative">
       <div className="absolute top-0 left-0 right-0 gold-line" />
       
-      <div ref={ref} className={`container-luxury scroll-fade-in ${isVisible ? 'visible' : ''}`}>
+      <div ref={ref} className="container-luxury">
         <div className="text-center mb-16">
-          <span className="inline-block text-xs tracking-[0.3em] text-primary uppercase mb-6">
+          <span className={`inline-block text-xs tracking-[0.3em] text-primary uppercase mb-6 scroll-headline ${isVisible ? 'visible' : ''}`}>
             Corporate Structure
           </span>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl tracking-wide mb-6 text-foreground heading-hover">
+          <h2 className={`font-heading text-3xl md:text-4xl lg:text-5xl tracking-wide mb-6 text-foreground heading-hover scroll-headline stagger-1 ${isVisible ? 'visible' : ''}`}>
             Governance Pillars
           </h2>
-          <div className="w-16 h-px bg-primary mx-auto mb-8" />
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
+          <div className={`w-16 h-px bg-primary mx-auto mb-8 scroll-fade-in stagger-2 ${isVisible ? 'visible' : ''}`} />
+          <p className={`text-lg text-muted-foreground max-w-2xl mx-auto font-light scroll-slide-up stagger-3 ${isVisible ? 'visible' : ''}`}>
             Our governance framework ensures sustainable growth and stakeholder value through three core pillars.
           </p>
         </div>
@@ -44,8 +44,7 @@ const GovernanceSection = () => {
           {pillars.map((pillar, index) => (
             <div 
               key={pillar.title}
-              className="group bg-card p-8 rounded-lg border border-border/30 card-shadow hover:border-primary/40 transition-all duration-500"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className={`group bg-card p-8 rounded-lg border border-border/30 card-shadow hover:border-primary/40 transition-all duration-500 scroll-card-fade stagger-${index + 3} ${isVisible ? 'visible' : ''}`}
             >
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
                 <pillar.icon className="w-7 h-7 text-primary" />

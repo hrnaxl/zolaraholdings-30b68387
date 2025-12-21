@@ -7,33 +7,33 @@ const timelineData = [
 ];
 
 const TimelineSection = () => {
-  const { ref, isVisible } = useScrollAnimation(0.2);
+  const { ref, isVisible } = useScrollAnimation(0.15);
 
   return (
     <section className="section-padding bg-background relative">
       <div className="absolute top-0 left-0 right-0 gold-line" />
       
-      <div ref={ref} className={`container-luxury scroll-fade-in ${isVisible ? 'visible' : ''}`}>
+      <div ref={ref} className="container-luxury">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <span className="inline-block text-xs tracking-[0.3em] text-primary uppercase mb-6">
+            <span className={`inline-block text-xs tracking-[0.3em] text-primary uppercase mb-6 scroll-headline ${isVisible ? 'visible' : ''}`}>
               Our Journey
             </span>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl tracking-wide mb-6 text-foreground heading-hover">
+            <h2 className={`font-heading text-3xl md:text-4xl lg:text-5xl tracking-wide mb-6 text-foreground heading-hover scroll-headline stagger-1 ${isVisible ? 'visible' : ''}`}>
               Strategic Timeline
             </h2>
-            <div className="w-16 h-px bg-primary mx-auto" />
+            <div className={`w-16 h-px bg-primary mx-auto scroll-fade-in stagger-2 ${isVisible ? 'visible' : ''}`} />
           </div>
           
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-primary/50 via-primary/30 to-transparent hidden md:block" />
+            <div className={`absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-primary/50 via-primary/30 to-transparent hidden md:block scroll-fade-in stagger-2 ${isVisible ? 'visible' : ''}`} />
             
             <div className="space-y-12 md:space-y-0">
               {timelineData.map((item, index) => (
                 <div 
                   key={item.year}
-                  className={`relative flex flex-col md:flex-row items-center gap-6 md:gap-12 ${
+                  className={`relative flex flex-col md:flex-row items-center gap-6 md:gap-12 scroll-card-fade stagger-${index + 2} ${isVisible ? 'visible' : ''} ${
                     index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                   } md:mb-16`}
                 >
