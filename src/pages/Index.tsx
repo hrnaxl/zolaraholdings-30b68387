@@ -7,6 +7,7 @@ import TimelineSection from "@/components/TimelineSection";
 import ValuesSection from "@/components/ValuesSection";
 import SubsidiariesSection from "@/components/SubsidiariesSection";
 import GovernanceSection from "@/components/GovernanceSection";
+import NewsSection from "@/components/NewsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -29,6 +30,8 @@ const Index = () => {
       <SubsidiariesSection />
       <div className="section-divider" />
       <GovernanceSection />
+      <div className="section-divider" />
+      <NewsSection />
       <div className="section-divider" />
       <ContactSection />
       <Footer />
