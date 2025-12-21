@@ -36,7 +36,7 @@ const ExecutiveDirectorSection = () => {
                   <img 
                     src={executiveDirectorPhoto} 
                     alt="Haruna Salifu - Executive Director" 
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-[center_15%]"
                   />
                 </div>
               </div>
