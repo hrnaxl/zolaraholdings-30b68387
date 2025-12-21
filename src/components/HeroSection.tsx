@@ -1,16 +1,12 @@
 import { Button } from "@/components/ui/button";
 import shieldLogo from "@/assets/shield-logo.png";
 import { useEffect, useState } from "react";
-
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-charcoal-light" />
       
@@ -23,58 +19,45 @@ const HeroSection = () => {
       
       <div className="container-luxury relative z-10 text-center pt-20">
         {/* Shield emblem */}
-        <div 
-          className={`mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-          style={{ transitionDelay: '0.1s' }}
-        >
-          <img 
-            src={shieldLogo} 
-            alt="Zolara Holdings Emblem" 
-            className="w-24 h-24 mx-auto object-contain"
-          />
+        <div className={`mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
+        transitionDelay: '0.1s'
+      }}>
+          <img alt="Zolara Holdings Emblem" className="w-24 h-24 mx-auto object-contain" src="/lovable-uploads/f84d2e3d-7df2-4629-8970-ef707906a355.jpg" />
         </div>
         
         {/* Main headline */}
-        <h1 
-          className={`font-heading text-5xl md:text-6xl lg:text-8xl tracking-wide mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-          style={{ transitionDelay: '0.3s' }}
-        >
+        <h1 className={`font-heading text-5xl md:text-6xl lg:text-8xl tracking-wide mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
+        transitionDelay: '0.3s'
+      }}>
           <span className="block text-foreground">Building Businesses</span>
           <span className="block gold-gradient-text mt-2">That Last</span>
         </h1>
         
         {/* Sub-headline */}
-        <p 
-          className={`text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-14 font-light leading-relaxed transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-          style={{ transitionDelay: '0.5s' }}
-        >
+        <p className={`text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-14 font-light leading-relaxed transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
+        transitionDelay: '0.5s'
+      }}>
           Zolara Holdings is a strategic investment and operating company focused on investing, building, and scaling businesses across Ghana and Africa.
         </p>
         
         {/* CTA Button */}
-        <div 
-          className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-          style={{ transitionDelay: '0.7s' }}
-        >
-          <Button 
-            variant="luxury" 
-            size="xl"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-          >
+        <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
+        transitionDelay: '0.7s'
+      }}>
+          <Button variant="luxury" size="xl" onClick={() => document.getElementById('contact')?.scrollIntoView({
+          behavior: 'smooth'
+        })}>
             Contact Us
           </Button>
         </div>
         
         {/* Scroll indicator */}
-        <div 
-          className={`absolute bottom-12 left-1/2 transform -translate-x-1/2 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-          style={{ transitionDelay: '1s' }}
-        >
+        <div className={`absolute bottom-12 left-1/2 transform -translate-x-1/2 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`} style={{
+        transitionDelay: '1s'
+      }}>
           <div className="w-px h-16 bg-gradient-to-b from-primary/50 to-transparent mx-auto" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
