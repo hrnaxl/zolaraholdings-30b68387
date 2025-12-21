@@ -37,13 +37,15 @@ const HeroSection = () => {
           <img alt="Zolara Holdings Emblem" className="w-24 h-24 mx-auto object-contain" src="/lovable-uploads/9e66a9b9-949c-4802-9a7c-751c4717f986.png" />
         </div>
         
-        {/* Main headline - 15% larger with tighter line height */}
-        <h1 className={`font-heading font-bold text-6xl md:text-7xl lg:text-9xl tracking-wide mb-8 leading-[0.95] transition-all duration-1000 heading-hover ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
-        transitionDelay: '0.3s'
-      }}>
-          <span className="block text-foreground">Building Businesses</span>
-          <span className="block gold-gradient-text mt-2">That Last</span>
-        </h1>
+        {/* Main headline - elegant proportions */}
+        <div className="max-w-4xl mx-auto">
+          <h1 className={`font-heading font-medium text-4xl md:text-5xl lg:text-7xl tracking-wide mb-8 leading-[0.9] transition-all duration-1000 heading-hover ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
+          transitionDelay: '0.3s'
+        }}>
+            <span className="block text-foreground">Building Businesses</span>
+            <span className="block gold-gradient-text mt-1">That Last</span>
+          </h1>
+        </div>
         
         {/* Sub-headline */}
         <p className={`text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-14 font-light leading-relaxed transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
