@@ -23,7 +23,7 @@ const CEOSection = () => {
           {/* Quote content */}
           <div className="relative">
             {/* Opening quote mark */}
-            <span className="absolute -top-8 -left-4 text-8xl text-primary/20 font-heading select-none">
+            <span className="absolute -top-8 -left-4 text-8xl text-primary/20 font-heading font-semibold select-none">
               "
             </span>
             
