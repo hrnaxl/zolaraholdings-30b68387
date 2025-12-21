@@ -4,7 +4,7 @@ const Header = () => {
       <div className="container-luxury">
         <div className="flex items-center justify-between h-20">
           <a href="#" className="flex items-center gap-3 group">
-            <img alt="Zolara Holdings Shield Logo" className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-110" src="/lovable-uploads/87285d27-67c4-4334-9b07-396fe632f5eb.png" />
+            <img alt="Zolara Holdings Shield Logo" className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-110" src="/lovable-uploads/ab784179-aba5-41c4-b1a8-bbaa0be1a07a.jpg" />
             <span className="font-heading text-lg tracking-widest text-primary">
               ZOLARA
             </span>
