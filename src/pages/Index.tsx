@@ -3,8 +3,10 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import CEOSection from "@/components/CEOSection";
 import MissionVisionSection from "@/components/MissionVisionSection";
+import TimelineSection from "@/components/TimelineSection";
 import ValuesSection from "@/components/ValuesSection";
 import SubsidiariesSection from "@/components/SubsidiariesSection";
+import GovernanceSection from "@/components/GovernanceSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -20,9 +22,13 @@ const Index = () => {
       <div className="section-divider" />
       <MissionVisionSection />
       <div className="section-divider" />
+      <TimelineSection />
+      <div className="section-divider" />
       <ValuesSection />
       <div className="section-divider" />
       <SubsidiariesSection />
+      <div className="section-divider" />
+      <GovernanceSection />
       <div className="section-divider" />
       <ContactSection />
       <Footer />
