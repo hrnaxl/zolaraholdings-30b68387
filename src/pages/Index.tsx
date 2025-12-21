@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import CEOSection from "@/components/CEOSection";
 import MissionVisionSection from "@/components/MissionVisionSection";
+import ExecutiveDirectorSection from "@/components/ExecutiveDirectorSection";
 import TimelineSection from "@/components/TimelineSection";
 import ValuesSection from "@/components/ValuesSection";
 import SubsidiariesSection from "@/components/SubsidiariesSection";
@@ -22,6 +23,8 @@ const Index = () => {
       <CEOSection />
       <div className="section-divider" />
       <MissionVisionSection />
+      <div className="section-divider" />
+      <ExecutiveDirectorSection />
       <div className="section-divider" />
       <TimelineSection />
       <div className="section-divider" />
