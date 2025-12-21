@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import executiveDirectorPhoto from "@/assets/executive-director.jpg";
+import executiveDirectorPhoto from "@/assets/executive-director.png";
 
 const ExecutiveDirectorSection = () => {
   const { ref, isVisible } = useScrollAnimation(0.1);
