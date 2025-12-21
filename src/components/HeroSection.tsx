@@ -37,8 +37,8 @@ const HeroSection = () => {
           <img alt="Zolara Holdings Emblem" className="w-24 h-24 mx-auto object-contain" src="/lovable-uploads/9e66a9b9-949c-4802-9a7c-751c4717f986.png" />
         </div>
         
-        {/* Main headline */}
-        <h1 className={`font-heading font-bold text-5xl md:text-6xl lg:text-8xl tracking-wide mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
+        {/* Main headline - 15% larger with tighter line height */}
+        <h1 className={`font-heading font-bold text-6xl md:text-7xl lg:text-9xl tracking-wide mb-8 leading-[0.95] transition-all duration-1000 heading-hover ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
         transitionDelay: '0.3s'
       }}>
           <span className="block text-foreground">Building Businesses</span>
@@ -56,7 +56,7 @@ const HeroSection = () => {
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{
         transitionDelay: '0.7s'
       }}>
-          <Button variant="luxury" size="xl" onClick={() => document.getElementById('contact')?.scrollIntoView({
+          <Button variant="luxury" size="xl" className="button-hover" onClick={() => document.getElementById('contact')?.scrollIntoView({
           behavior: 'smooth'
         })}>
             Contact Us

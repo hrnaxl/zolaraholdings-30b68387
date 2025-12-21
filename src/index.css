@@ -132,7 +132,24 @@
 
 /* Light theme section divider */
 .light-theme .section-divider {
-  border-top: 1px solid hsl(var(--divider-color));
+  background: linear-gradient(to right, transparent, hsl(var(--divider-color)), transparent);
+}
+
+/* Light theme card shadows */
+.light-theme .card-shadow {
+  box-shadow: 0 4px 20px hsl(0 0% 0% / 0.08), 0 1px 3px hsl(0 0% 0% / 0.05);
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 640px) {
+  html {
+    font-size: 17px;
+  }
+  
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 @layer base {
@@ -178,7 +195,7 @@
   }
 
   .section-padding {
-    @apply py-32 md:py-40 lg:py-48;
+    @apply py-24 md:py-32 lg:py-40;
   }
 
   .scroll-fade-in {
@@ -193,7 +210,35 @@
   }
 
   .container-luxury {
-    @apply max-w-6xl mx-auto px-6 md:px-8;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 md:px-8;
+  }
+
+  /* Card shadows for depth */
+  .card-shadow {
+    box-shadow: 0 4px 20px hsl(0 0% 0% / 0.2), 0 0 40px hsl(43 74% 49% / 0.03);
+  }
+
+  /* Hover animations for headings - subtle glow only */
+  .heading-hover {
+    transition: text-shadow 0.4s ease-out;
+  }
+
+  .heading-hover:hover {
+    text-shadow: 0 0 30px hsl(43 74% 49% / 0.3);
+  }
+
+  /* Hover animations for buttons - subtle glow only */
+  .button-hover {
+    transition: box-shadow 0.4s ease-out;
+  }
+
+  .button-hover:hover {
+    box-shadow: 0 0 25px hsl(43 74% 49% / 0.4);
+  }
+
+  /* Section divider with gold accent */
+  .section-divider {
+    @apply h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent my-0;
   }
 }
 
