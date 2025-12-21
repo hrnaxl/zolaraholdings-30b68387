@@ -28,13 +28,22 @@ const ContactSection = () => {
               <span className="text-lg md:text-xl font-light">info@zolaraholdings.com</span>
             </a>
             
-            {/* Phone */}
+            {/* Phone 1 */}
             <a 
               href="tel:+233594922679"
               className={`flex items-center justify-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-300 group scroll-slide-up stagger-4 ${isVisible ? 'visible' : ''}`}
             >
               <Phone className="w-5 h-5 text-primary/70 group-hover:text-primary" />
               <span className="text-lg md:text-xl font-light">+233 594 922 679</span>
+            </a>
+            
+            {/* Phone 2 */}
+            <a 
+              href="tel:+233249978750"
+              className={`flex items-center justify-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-300 group scroll-slide-up stagger-4 ${isVisible ? 'visible' : ''}`}
+            >
+              <Phone className="w-5 h-5 text-primary/70 group-hover:text-primary" />
+              <span className="text-lg md:text-xl font-light">+233 249 978 750</span>
             </a>
             
             {/* Address */}
