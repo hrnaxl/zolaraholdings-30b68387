@@ -148,10 +148,7 @@ export default function App(){
         <div style={{position:"absolute",inset:0,background:`radial-gradient(ellipse 50% 60% at 15% 85%,${C.greenMid}90 0%,transparent 55%)`}}/>
         <div style={{position:"absolute",inset:0,background:`radial-gradient(ellipse 40% 40% at 85% 20%,${C.greenMid}50 0%,transparent 55%)`}}/>
 
-        {/* Enormous background ZOLARA */}
-        <div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",pointerEvents:"none",overflow:"hidden"}}>
-          <div className="rf" style={{fontFamily:"'Cormorant',serif",fontSize:"clamp(120px,22vw,320px)",fontWeight:600,color:"#0D240F",letterSpacing:"-0.04em",lineHeight:1,userSelect:"none",whiteSpace:"nowrap",textAlign:"center",marginTop:20}}>ZOLARA</div>
-        </div>
+
 
         {/* Rings */}
         <div className="hm" style={{position:"absolute",top:"50%",left:"50%",width:640,height:640,animation:"spin 80s linear infinite",pointerEvents:"none"}}>
@@ -223,7 +220,6 @@ export default function App(){
       <section id="about" className="pad" style={{padding:"160px 52px",background:C.bg,position:"relative",overflow:"hidden"}}>
 
         {/* Enormous bg "01" */}
-        <div style={{position:"absolute",top:-60,left:-20,fontFamily:"'Cormorant',serif",fontSize:"clamp(200px,30vw,420px)",fontWeight:600,color:"#0A140805",lineHeight:1,pointerEvents:"none",userSelect:"none",letterSpacing:"-0.05em"}}>01</div>
 
         <div style={{maxWidth:1400,margin:"0 auto",position:"relative",zIndex:2}}>
 
@@ -312,7 +308,6 @@ export default function App(){
       {/* ━━━━ PORTFOLIO ━━━━ */}
       {/* Full-width alternating rows, not a grid */}
       <section id="portfolio" className="pad" style={{padding:"160px 52px",background:C.bg,position:"relative",overflow:"hidden"}}>
-        <div style={{position:"absolute",top:-60,right:-20,fontFamily:"'Cormorant',serif",fontSize:"clamp(200px,28vw,380px)",fontWeight:600,color:"#0A14080A",lineHeight:1,pointerEvents:"none",userSelect:"none"}}>02</div>
 
         <div style={{maxWidth:1400,margin:"0 auto",position:"relative",zIndex:2}}>
           <div className="rl" style={{display:"flex",alignItems:"center",gap:16,marginBottom:80}}>
@@ -373,7 +368,6 @@ export default function App(){
       {/* Dark green bg, values punching through with large roman type */}
       <section style={{background:C.greenMid,padding:"140px 52px",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",inset:0,background:`radial-gradient(ellipse 70% 80% at 30% 50%,${C.bg}60,transparent)`}}/>
-        <div style={{position:"absolute",top:-80,right:-40,fontFamily:"'Cormorant',serif",fontSize:"clamp(180px,26vw,360px)",fontWeight:600,color:"#0D240F0A",lineHeight:1,pointerEvents:"none",userSelect:"none"}}>03</div>
 
         <div style={{maxWidth:1400,margin:"0 auto",position:"relative",zIndex:2}}>
           <div className="rl" style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:80,flexWrap:"wrap",gap:32}}>
@@ -402,7 +396,6 @@ export default function App(){
       {/* ━━━━ LEADERSHIP ━━━━ */}
       {/* Massive name, minimal everything else */}
       <section id="leadership" className="pad" style={{padding:"160px 52px",background:C.bg,position:"relative",overflow:"hidden"}}>
-        <div style={{position:"absolute",bottom:-80,left:-40,fontFamily:"'Cormorant',serif",fontSize:"clamp(180px,28vw,400px)",fontWeight:600,color:"#0A14080A",lineHeight:1,pointerEvents:"none",userSelect:"none"}}>04</div>
 
         <div style={{maxWidth:1400,margin:"0 auto",position:"relative",zIndex:2}}>
           <div className="rl" style={{display:"flex",alignItems:"center",gap:16,marginBottom:80}}>
@@ -447,7 +440,6 @@ export default function App(){
 
       {/* ━━━━ TIMELINE ━━━━ */}
       <section style={{background:C.panel,padding:"120px 52px",position:"relative",overflow:"hidden"}}>
-        <div style={{position:"absolute",bottom:-60,left:-20,fontFamily:"'Cormorant',serif",fontSize:"clamp(180px,26vw,360px)",fontWeight:600,color:"#0A14080A",lineHeight:1,pointerEvents:"none",userSelect:"none"}}>05</div>
         <div style={{maxWidth:1400,margin:"0 auto",position:"relative",zIndex:2}}>
           <div className="rl" style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:80,flexWrap:"wrap",gap:32}}>
             <div style={{display:"flex",alignItems:"center",gap:16}}>
@@ -480,7 +472,6 @@ export default function App(){
       {/* ━━━━ CONTACT ━━━━ */}
       <section id="contact" className="pad" style={{padding:"160px 52px",background:C.bg,position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",inset:0,background:`radial-gradient(ellipse 60% 70% at 80% 60%,${C.greenMid}70,transparent)`}}/>
-        <div style={{position:"absolute",top:-60,right:-20,fontFamily:"'Cormorant',serif",fontSize:"clamp(180px,28vw,380px)",fontWeight:600,color:"#0A14080A",lineHeight:1,pointerEvents:"none",userSelect:"none"}}>06</div>
 
         <div style={{maxWidth:1400,margin:"0 auto",position:"relative",zIndex:2}}>
           <div className="rl" style={{display:"flex",alignItems:"center",gap:16,marginBottom:80}}>
