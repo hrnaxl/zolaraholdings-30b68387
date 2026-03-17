@@ -231,7 +231,7 @@ export default function App(){
       {/* ━━━ STATS BAND — full dark green strip ━━━ */}
       <div style={{background:C.forest,padding:"56px 56px"}}>
         <div style={{maxWidth:1360,margin:"0 auto",display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:0}} className="col4">
-          {[["5","","Portfolio Companies"],["700","K+","Capital Deployed GHS"],["2025","","Year Founded"],["7","","Staff Employed"]].map(([n,s,l],i)=>(
+          {[["5","","Portfolio Companies"],["2","M+","Capital Deployed GHS"],["2025","","Year Founded"],["7","","Staff Employed"]].map(([n,s,l],i)=>(
             <div key={l} style={{padding:"0 0",borderRight:i<3?"1px solid #243024":"none",paddingLeft:i>0?40:0}}>
               <Ctr n={n} suf={s} label={l}/>
             </div>
@@ -475,7 +475,7 @@ export default function App(){
           {/* Horizontal timeline */}
           <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:2}} className="col3">
             {[
-              {year:"2025",t:"Group Formation",d:"Establishment of Zolara Holdings Ltd and launch of Zolara Beauty Studio in Tamale. Investment exceeds GHS 700,000.",active:true},
+              {year:"2025",t:"Group Formation",d:"Establishment of Zolara Holdings Ltd and launch of Zolara Beauty Studio in Tamale. Total capital deployed exceeds GHS 2,000,000.",active:true},
               {year:"2026",t:"Real Estate",d:"Launch of Zolara Properties — real estate development and property management across Northern Ghana."},
               {year:"2027",t:"Pharma & Wellness",d:"Entry into pharmaceutical retail and wellness — expanding Zolara's health footprint across Ghana."},
             ].map((item,i)=>(
