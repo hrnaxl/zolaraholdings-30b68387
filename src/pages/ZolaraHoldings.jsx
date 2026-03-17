@@ -270,11 +270,7 @@ export default function ZolaraHoldings() {
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 56px", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* Logo */}
           <a href="#" style={{ display: "flex", alignItems: "center", gap: 16, textDecoration: "none" }}>
-            <svg width="34" height="38" viewBox="0 0 34 38" fill="none">
-              <path d="M17 1L33 8V21C33 29.8 25.8 36.8 17 38C8.2 36.8 1 29.8 1 21V8L17 1Z" stroke="#C6A15B" strokeWidth="1" fill="none"/>
-              <path d="M17 9L26 13.5V20.5C26 26 22 31 17 32.5C12 31 8 26 8 20.5V13.5L17 9Z" fill="#C6A15B0C" stroke="#C6A15B" strokeWidth="0.7"/>
-              <text x="17" y="24" textAnchor="middle" fill="#C6A15B" fontFamily="'Playfair Display', serif" fontSize="12" fontWeight="500">Z</text>
-            </svg>
+            <img src="/zh-logo.jpeg" alt="Zolara Holdings" style={{ width: 48, height: 48, objectFit: "contain" }} />
             <div>
               <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 15, fontWeight: 500, color: C.ivory, letterSpacing: "0.2em" }}>ZOLARA</div>
               <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 7.5, color: C.platinum, letterSpacing: "0.4em", textTransform: "uppercase", marginTop: 1 }}>Holdings Ltd</div>
@@ -478,9 +474,7 @@ export default function ZolaraHoldings() {
 
             {/* Philosophy card */}
             <div className={`port-card sr d6`} style={{ background: `${C.gold}08`, borderColor: `${C.gold}20`, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "44px 32px" }}>
-              <svg width="32" height="36" viewBox="0 0 34 38" fill="none" style={{ marginBottom: 24, opacity: 0.5 }}>
-                <path d="M17 1L33 8V21C33 29.8 25.8 36.8 17 38C8.2 36.8 1 29.8 1 21V8L17 1Z" stroke="#C6A15B" strokeWidth="1" fill="none"/>
-              </svg>
+              <img src="/zh-logo.jpeg" alt="Zolara Holdings" style={{ width: 48, height: 48, objectFit: "contain", marginBottom: 24, opacity: 0.5 }} />
               <p style={{ fontFamily: "'Playfair Display', serif", fontSize: 17, fontStyle: "italic", color: "#6A6A74", lineHeight: 1.8 }}>
                 "We build businesses<br />that last generations."
               </p>
@@ -542,10 +536,7 @@ export default function ZolaraHoldings() {
                 <div style={{ position: "absolute", top: "-100%", left: 0, right: 0, height: "30%", background: "linear-gradient(to bottom, transparent, #C6A15B04, transparent)", animation: "scanline 8s linear infinite", pointerEvents: "none" }} />
                 <div style={{ textAlign: "center" }}>
                   <div style={{ width: 80, height: 80, border: `1px solid ${C.gold}40`, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", animation: "pulse 3s ease-in-out infinite" }}>
-                    <svg width="36" height="40" viewBox="0 0 34 38" fill="none">
-                      <path d="M17 1L33 8V21C33 29.8 25.8 36.8 17 38C8.2 36.8 1 29.8 1 21V8L17 1Z" stroke="#C6A15B" strokeWidth="1" fill="none"/>
-                      <text x="17" y="23" textAnchor="middle" fill="#C6A15B" fontFamily="'Playfair Display', serif" fontSize="13" fontWeight="500">H</text>
-                    </svg>
+                  <img src="/zh-logo.jpeg" alt="ZH" style={{ width: 48, height: 48, objectFit: "contain" }} />
                   </div>
                   <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 9, color: "#3A3A44", letterSpacing: "0.35em", textTransform: "uppercase" }}>Portrait</p>
                 </div>
@@ -687,10 +678,7 @@ export default function ZolaraHoldings() {
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 20, marginBottom: 28 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-              <svg width="22" height="24" viewBox="0 0 34 38" fill="none">
-                <path d="M17 1L33 8V21C33 29.8 25.8 36.8 17 38C8.2 36.8 1 29.8 1 21V8L17 1Z" stroke="#C6A15B" strokeWidth="1" fill="none" opacity="0.5"/>
-                <text x="17" y="23" textAnchor="middle" fill="#C6A15B" fontFamily="serif" fontSize="11" opacity="0.5">Z</text>
-              </svg>
+              <img src="/zh-logo.jpeg" alt="Zolara Holdings" style={{ width: 28, height: 28, objectFit: "contain", opacity: 0.5 }} />
               <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 12, color: "#3A3A44", letterSpacing: "0.3em" }}>ZOLARA HOLDINGS LTD</span>
             </div>
             <nav style={{ display: "flex", gap: 32 }}>
