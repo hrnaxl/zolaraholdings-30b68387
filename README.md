@@ -1,73 +1,29 @@
-# Welcome to your Lovable project
+# Zolara Holdings Ltd
 
-## Project info
+The corporate website uses React and Vite. The build renders each public route to static HTML with its own metadata. Production navigation works without JavaScript, with a small script to add Escape and breakpoint handling to the mobile menu.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm ci
 npm run dev
+npm run lint
+npm run typecheck
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+Serve `dist/` on a host that supports directory indexes and custom 404 responses. The Vercel config keeps the canonical trailing slashes. For an isolated review build, run `ZOLARA_REVIEW=1 npm run build` to add noindex metadata and a blocking robots.txt. Vercel preview builds apply the same behavior automatically.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Content and launch review
 
-**Use GitHub Codespaces**
+- The portfolio features Zolara Beauty Studio as operating in Tamale. The other four interests are presented as potential ventures. Registration, ownership structures, dates and financial or headcount claims need corporate records before publication.
+- Contact uses the public group email and phone numbers carried over from the existing corporate site. No web form or automated delivery is configured. Confirm that the mailbox and phone numbers are monitored.
+- Have Zolara review the privacy page for hosting, email handling and retention practices before the production launch.
+- The existing founder portrait is used in the redesign. Confirm publication approval for that portrait and the two photographs sourced from the official Beauty Studio website.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Photography
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Airport City, Accra. [Accra Skyline - Ghana.jpg](https://commons.wikimedia.org/wiki/File:Accra_Skyline_-_Ghana.jpg) by Synth85, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized, cropped and colour adjusted for display. Adapted image files under the same license are `public/images/accra-760.webp` and `public/images/accra-1550.webp`.
+- National Theatre, Accra. [National Theatre - Ghana.jpg](https://commons.wikimedia.org/wiki/File:National_Theatre_-_Ghana.jpg) by Fquasie, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized, cropped and colour adjusted. Adapted image files under the same license are `public/images/theatre-760.webp` and `public/images/theatre-1550.webp`.
+- Beauty Studio photographs come from [Zolara Beauty Studio](https://www.zolarasalon.com/). The founder image comes from the original repository.
+- Newsreader and Manrope are redistributed under the SIL Open Font License included in `public/fonts/`.
