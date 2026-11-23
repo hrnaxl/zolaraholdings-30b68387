@@ -185,19 +185,8 @@ main:focus { outline: 0; }
 .intro-grid h2 { font-size: clamp(2.2rem, 3.8vw, 4rem); text-wrap: pretty; }
 .intro-grid > p:last-child { color: var(--muted); max-width: 34ch; }
 
-.portfolio-home { padding-block: var(--section); }
-.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.25rem; border-bottom: 1px solid var(--line); margin-bottom: 1.6rem; padding-bottom: 1.35rem; }
-.section-heading .eyebrow + h2 { margin-top: 0; text-align: right; }
-.studio-feature { display: grid; grid-template-columns: 1.17fr .83fr; background: var(--paper); }
-.studio-feature .studio-image { width: 100%; height: clamp(25rem, 37vw, 34rem); object-fit: cover; object-position: center 40%; }
-.studio-feature > div { align-self: center; padding: clamp(1.55rem, 5vw, 5.75rem); }
-.status { color: var(--forest); font-size: .83rem; font-weight: 700; }
-.status + h2, .status + h3 { margin-top: .85rem; }
-.studio-feature h2, .studio-feature h3 { font-size: clamp(2.75rem, 4.4vw, 4.6rem); }
-.studio-feature h2 + p, .studio-feature h3 + p { margin-block: 1.1rem .65rem; max-width: 34ch; color: var(--muted); }
-.studio-feature .text-link, .studio-story .text-link { display: flex; }
-.portfolio-foot { display: flex; justify-content: space-between; align-items: baseline; gap: .4rem 1.5rem; margin-top: 1.25rem; color: var(--muted); }
-.portfolio-foot p { max-width: 62ch; }
+.studio-story .text-link { display: flex; }
+
 .approach { padding-block: var(--section); }
 .dark { background: var(--forest); color: var(--ivory); }
 .dark .eyebrow, .closing .eyebrow, .contact-panel .eyebrow { color: #e5d7b9; }
@@ -265,7 +254,21 @@ main:focus { outline: 0; }
 .direction-grid { align-items: start; padding-top: var(--section); }
 .direction-grid p + p, .studio-story p + p p + p { margin-top: .75rem; }
 .direction-grid p + .text-link { margin-top: .75rem; }
-.business-feature { padding-block: clamp(1.9rem, 4vw, 4rem) var(--section); }
+#portfolio { border-bottom: 1px solid var(--line); }
+.operating-business { padding-block: clamp(2.5rem, 5vw, 4.5rem); }
+.operating-business h2 { font-size: clamp(1.85rem, 3.6vw, 3rem); }
+.operating-business-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .35rem 1.5rem;
+  margin-top: 1.15rem;
+  padding-block: 1.1rem;
+  border-block: 1px solid var(--line);
+}
+.operating-business-row h3 { font-size: clamp(1.45rem, 2.7vw, 2.15rem); }
+.operating-business-row p { margin-top: .35rem; color: var(--muted); }
 .ventures { background: var(--soft-green); padding-block: var(--section); }
 .ventures h2 + p { margin-top: .9rem; color: var(--muted); }
 .studio-story { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); }
@@ -288,7 +291,6 @@ main:focus { outline: 0; }
   .hero { align-items: start; }
   .hero .architecture img { aspect-ratio: 1.07; }
   .intro-grid { grid-template-columns: .46fr 1.4fr .85fr; }
-  .studio-feature .studio-image { height: 25rem; }
 }
 @media (max-width: 900px) {
   .intro-grid { grid-template-columns: .5fr 1.5fr; }
@@ -328,11 +330,6 @@ main:focus { outline: 0; }
   .hero .architecture img { aspect-ratio: 1.36; }
   .intro-grid, .approach-grid, .ventures-grid, .leader-home, .closing-inner, .page-intro, .origin-story, .direction-grid, .studio-story, .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .intro-grid > p:last-child, .studio-detail { grid-column: auto; }
-  .section-heading { display: block; }
-  .section-heading .eyebrow + h2 { margin-top: .7rem; text-align: left; }
-  .studio-feature { grid-template-columns: minmax(0, 1fr); }
-  .studio-feature .studio-image { min-height: 0; height: auto; aspect-ratio: 1.18; }
-  .portfolio-foot { flex-direction: column; }
   .approach-grid h2 { max-width: 16ch; }
   .leader-home { gap: 1.7rem; }
   .closing h2 h2 { max-width: none; }

@@ -1,4 +1,4 @@
-import { ArchitecturePhoto, Approach, Closing, StudioPhoto, TextLink } from "../components/Editorial";
+import { ArchitecturePhoto, Approach, Closing, TextLink } from "../components/Editorial";
 import { founder } from "../content";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">A Ghanaian holding company</p>
           <h1 id="home-title">We build<br />businesses <em>for the long term.</em></h1>
-          <p className="hero-lede">From our base in Tamale, we develop, own and operate businesses. Zolara Beauty Studio is where we began.</p>
+          <p className="hero-lede">From our base in Tamale, we develop, own and operate businesses in Ghana.</p>
           <div className="hero-actions">
             <a className="button" href="/businesses/">Explore our businesses</a>
             <TextLink href="/about/">About Zolara</TextLink>
@@ -25,25 +25,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="portfolio" className="portfolio-home shell" aria-labelledby="portfolio-title">
-        <div className="section-heading">
-          <p className="eyebrow">Our businesses</p>
-          <h2 id="portfolio-title">In operation today.</h2>
-        </div>
-        <div className="studio-feature">
-          <StudioPhoto />
-          <div>
-            <p className="status">Operating business · Tamale</p>
-            <h3>Zolara Beauty Studio</h3>
-            <p>A beauty studio in Sakasaka, Tamale, offering braiding, nail care and other beauty services by appointment.</p>
-            <TextLink href="/businesses/beauty-studio/">Meet Beauty Studio</TextLink>
-            <TextLink href="https://www.zolarasalon.com/">Visit the studio website</TextLink>
-          </div>
-        </div>
-        <div className="portfolio-foot"><p>We are also exploring opportunities in property, logistics, pharma and wellness, and hospitality.</p><TextLink href="/businesses/">View our business interests</TextLink></div>
-      </section>
-
       <Approach dark />
+
+      <section id="portfolio" className="shell direction-grid" aria-labelledby="portfolio-title">
+        <div>
+          <p className="eyebrow">Our businesses</p>
+          <h2 id="portfolio-title">Where we’re looking.</h2>
+        </div>
+        <div>
+          <p>Alongside our current operations, we are exploring opportunities in property, logistics, pharma and wellness, and hospitality.</p>
+          <TextLink href="/businesses/">Explore the portfolio</TextLink>
+        </div>
+      </section>
 
       <section id="leadership" className="leader-home shell" aria-labelledby="leader-title">
         <div>

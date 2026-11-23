@@ -18,7 +18,7 @@ export const navigation = [
 export const pages = {
   "/": {
     title: "Zolara Holdings Ltd | Long-term business ownership in Ghana",
-    description: "Zolara Holdings builds, owns and operates businesses for the long term. Founded in Ghana, where our first operating business serves clients in Tamale.",
+    description: "Zolara Holdings is a Ghanaian holding company based in Tamale. We build, own and operate businesses for the long term.",
   },
   "/about/": {
     title: "About Zolara | Zolara Holdings Ltd",
@@ -26,7 +26,7 @@ export const pages = {
   },
   "/businesses/": {
     title: "Our Businesses | Zolara Holdings Ltd",
-    description: "Meet Zolara Beauty Studio, our operating business in Tamale, and explore the sectors Zolara Holdings is considering for future ventures.",
+    description: "Explore Zolara Holdings’ current operations and the sectors we are considering for future growth.",
   },
   "/businesses/beauty-studio/": {
     title: "Zolara Beauty Studio | Zolara Holdings Ltd",

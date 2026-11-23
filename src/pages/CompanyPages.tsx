@@ -8,7 +8,7 @@ export function About() {
         <p>Zolara Holdings is a Ghanaian holding company based in Tamale. We develop, own and operate businesses with a long-term view.</p>
       </PageIntro>
       <section className="shell origin-story">
-        <div><p className="eyebrow">Our beginnings</p><h2>From Tamale.</h2><p>Zolara Beauty Studio is the first operating business featured in our portfolio. It serves clients in Sakasaka and gives the group practical experience building a customer-facing business in Northern Ghana.</p><TextLink href="/businesses/beauty-studio/">Explore Beauty Studio</TextLink></div>
+        <div><p className="eyebrow">Our beginnings</p><h2>From Tamale.</h2><p>We began in Tamale, where running a customer-facing business gave us firsthand experience setting service standards and building a team in Northern Ghana.</p><TextLink href="/businesses/">Explore the portfolio</TextLink></div>
         <ArchitecturePhoto subject="airport" />
       </section>
       <Approach />
@@ -24,23 +24,19 @@ export function Businesses() {
   return (
     <>
       <PageIntro label="Our businesses" title="The Zolara portfolio.">
-        <p>Explore our operating business in Tamale and the areas we are considering for future development.</p>
+        <p>Our portfolio reflects what we operate today and the sectors we are exploring for future growth.</p>
       </PageIntro>
-      <section className="shell business-feature" aria-labelledby="business-title">
-        <div className="studio-feature">
-          <StudioPhoto eager />
-          <div>
-            <p className="status">Operating business · Tamale</p>
-            <h2 id="business-title">Zolara Beauty Studio</h2>
-            <p>Beauty and personal care in Sakasaka, Northern Ghana. The studio offers braiding, nail care and other services through its own appointment site.</p>
-            <TextLink href="/businesses/beauty-studio/">Explore Beauty Studio</TextLink>
-          </div>
-        </div>
-      </section>
       <section className="ventures">
         <div className="shell ventures-grid">
           <div><p className="eyebrow">Future ventures</p><h2>Areas of interest.</h2><p>These are areas for potential development. We have no public launch dates for them.</p></div>
           <dl className="approach-list">{plannedVentures.map(venture => <div key={venture.name}><dt>{venture.name}</dt><dd>{venture.description}</dd></div>)}</dl>
+        </div>
+      </section>
+      <section className="shell operating-business" aria-labelledby="operating-title">
+        <h2 id="operating-title">Current operations</h2>
+        <div className="operating-business-row">
+          <div><h3>Zolara Beauty Studio</h3><p>Beauty and personal care · Tamale, Ghana</p></div>
+          <TextLink href="/businesses/beauty-studio/">View business</TextLink>
         </div>
       </section>
       <Closing title="Interested in working together?">Tell us about your business and where you think we could work together.</Closing>
