@@ -89,6 +89,15 @@ export function ArchitecturePhoto({ subject, eager = false }: {
   );
 }
 
-export function StudioPhoto({ eager = false }: { eager?: boolean }) {
-  return <img className="studio-image" src="/images/beauty-studio.webp" width="630" height="1050" loading={eager ? "eager" : "lazy"} {...(eager ? { fetchpriority: "high" } : {})} decoding="async" alt="A Zolara Beauty Studio client with long braids" />;
+export function StudioPhoto() {
+  return (
+    <img
+      className="studio-image"
+      src="/images/beauty-storefront-850.webp"
+      width="850"
+      height="1150"
+      decoding="async"
+      alt="Illuminated Zolara Beauty Studio storefront with a view into the salon"
+    />
+  );
 }

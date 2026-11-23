@@ -14,7 +14,7 @@ export const organization = {
   "@id": origin + "/#organization",
   name: company,
   url: origin + "/",
-  logo: origin + "/brand-mark.svg",
+  logo: origin + "/brand-zh.webp",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Tamale",

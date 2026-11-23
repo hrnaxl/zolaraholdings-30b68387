@@ -35,7 +35,11 @@ export function Businesses() {
       <section className="shell operating-business" aria-labelledby="operating-title">
         <h2 id="operating-title">Current operations</h2>
         <div className="operating-business-row">
-          <div><h3>Zolara Beauty Studio</h3><p>Beauty and personal care · Tamale, Ghana</p></div>
+          <img className="operating-business-thumb" src="/images/beauty-storefront-thumb.webp" width="72" height="72" alt="" loading="lazy" decoding="async" />
+          <div>
+            <h3>Zolara Beauty Studio</h3>
+            <p>Beauty and personal care · Tamale, Ghana</p>
+          </div>
           <TextLink href="/businesses/beauty-studio/">View business</TextLink>
         </div>
       </section>
@@ -52,7 +56,7 @@ export function BeautyStudio() {
         <a className="button" href={salonUrl}>Visit the studio website</a>
       </PageIntro>
       <section className="shell studio-story" aria-labelledby="studio-title">
-        <StudioPhoto eager />
+        <StudioPhoto />
         <div>
           <p className="eyebrow">At the studio</p><h2 id="studio-title">Beauty care by appointment.</h2>
           <p>The studio offers braiding, nail care and other beauty services. Visit its booking site for the current service menu, prices and appointments.</p>
