@@ -1,4 +1,4 @@
-import { ArchitecturePhoto, Approach, Closing, FounderPhoto, StudioPhoto, TextLink } from "../components/Editorial";
+import { ArchitecturePhoto, Approach, Closing, StudioPhoto, TextLink } from "../components/Editorial";
 import { founder } from "../content";
 
 export default function Home() {
@@ -46,12 +46,13 @@ export default function Home() {
       <Approach dark />
 
       <section id="leadership" className="leader-home shell" aria-labelledby="leader-title">
-        <div className="leader-frame"><FounderPhoto /></div>
-        <div className="leader-copy">
+        <div>
           <p className="eyebrow">Leadership</p>
           <h2 id="leader-title">{founder.name}</h2>
           <p className="role">{founder.role}</p>
-          <p>Haruna founded Zolara Holdings in Ghana. He focuses on how the group commits capital, supports its businesses and decides where to grow.</p>
+        </div>
+        <div className="leader-copy">
+          <p>{founder.introduction}</p>
           <TextLink href="/leadership/">Meet our founder</TextLink>
         </div>
       </section>

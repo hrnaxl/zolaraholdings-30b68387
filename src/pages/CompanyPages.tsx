@@ -1,4 +1,4 @@
-import { ArchitecturePhoto, Approach, Closing, FounderPhoto, PageIntro, StudioPhoto, TextLink } from "../components/Editorial";
+import { ArchitecturePhoto, Approach, Closing, PageIntro, StudioPhoto, TextLink } from "../components/Editorial";
 import { email, founder, plannedVentures, salonUrl } from "../content";
 
 export function About() {
@@ -72,21 +72,11 @@ export function BeautyStudio() {
 
 export function Leadership() {
   return (
-    <>
-      <PageIntro label="Leadership" title={founder.name}>
-        <p>{founder.role}</p>
-      </PageIntro>
-      <section className="shell leadership-profile" aria-labelledby="profile-title">
-        <figure className="leader-frame"><FounderPhoto eager /><figcaption>{founder.name}, {founder.role}</figcaption></figure>
-        <div>
-          <p className="eyebrow">Founder profile</p>
-          <h2 id="profile-title">Building the group from Ghana.</h2>
-          <p>Haruna Salifu founded Zolara Holdings to build and operate businesses in Ghana for the long term. His priorities include deciding where to commit capital, supporting day-to-day operations and assessing when a business is ready to expand.</p>
-          <p>Beauty Studio in Tamale is the group’s first operating example. The group’s future plans are informed by what it learns from running a business and serving customers locally.</p>
-          <TextLink href="/about/">About the group</TextLink>
-        </div>
-      </section>
-    </>
+    <PageIntro label="Leadership" title={founder.name}>
+      <p className="role">{founder.role}</p>
+      <p className="founder-introduction">{founder.introduction}</p>
+      <TextLink href="/about/">About the group</TextLink>
+    </PageIntro>
   );
 }
 

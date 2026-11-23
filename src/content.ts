@@ -2,7 +2,11 @@ export const origin = "https://www.zolaraholdings.com";
 export const company = "Zolara Holdings Ltd";
 export const email = "info@zolaraholdings.com";
 export const salonUrl = "https://www.zolarasalon.com/";
-export const founder = { name: "Haruna Salifu", role: "Founder & Executive Director" };
+export const founder = {
+  name: "Haruna Salifu",
+  role: "Founder & Executive Director",
+  introduction: "Haruna Salifu founded Zolara Holdings to build and operate businesses in Ghana for the long term. He guides where the group invests, how it supports its businesses and when it is ready to expand.",
+};
 
 export const navigation = [
   { label: "About", path: "/about/" },

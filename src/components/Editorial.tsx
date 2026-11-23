@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { approach, founder } from "../content";
+import { approach } from "../content";
 
 export function TextLink({ href, children }: { href: string; children: ReactNode }) {
   return <a className="text-link" href={href}>{children}</a>;
@@ -91,8 +91,4 @@ export function ArchitecturePhoto({ subject, eager = false }: {
 
 export function StudioPhoto({ eager = false }: { eager?: boolean }) {
   return <img className="studio-image" src="/images/beauty-studio.webp" width="630" height="1050" loading={eager ? "eager" : "lazy"} {...(eager ? { fetchpriority: "high" } : {})} decoding="async" alt="A Zolara Beauty Studio client with long braids" />;
-}
-
-export function FounderPhoto({ eager = false }: { eager?: boolean }) {
-  return <img className="founder-image" src="/images/haruna-salifu.webp" width="551" height="720" loading={eager ? "eager" : "lazy"} {...(eager ? { fetchpriority: "high" } : {})} decoding="async" alt={founder.name} />;
 }
