@@ -44,6 +44,29 @@ export const pages = {
     title: "Privacy Policy | Zolara Holdings Ltd",
     description: "Learn how Zolara Holdings Ltd handles information from website visits and email inquiries.",
   },
+  "/image-credits/": {
+    title: "Image Credits | Zolara Holdings Ltd",
+    description: "Photography credits, sources and licences for images on the Zolara Holdings Ltd website.",
+  },
+} as const;
+
+export const architecture = {
+  theatre: {
+    file: "theatre",
+    name: "National Theatre, Accra, Ghana",
+    alt: "Angular concrete facade of the National Theatre in Accra",
+    source: "https://commons.wikimedia.org/wiki/File:National_Theatre_-_Ghana.jpg",
+    credit: "Fquasie",
+    edits: "Resized, cropped and colour adjusted for display.",
+  },
+  airport: {
+    file: "accra",
+    name: "Airport City, Accra, Ghana",
+    alt: "Commercial buildings at Airport City in Accra",
+    source: "https://commons.wikimedia.org/wiki/File:Accra_Skyline_-_Ghana.jpg",
+    credit: "Synth85",
+    edits: "Resized, cropped and colour adjusted for display.",
+  },
 } as const;
 
 export type PagePath = keyof typeof pages;

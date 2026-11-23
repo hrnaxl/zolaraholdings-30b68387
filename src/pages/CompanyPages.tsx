@@ -1,5 +1,5 @@
 import { ArchitecturePhoto, Approach, Closing, PageIntro, StudioPhoto, TextLink } from "../components/Editorial";
-import { email, founder, plannedVentures, salonUrl } from "../content";
+import { architecture, email, founder, plannedVentures, salonUrl } from "../content";
 
 export function About() {
   return (
@@ -110,11 +110,30 @@ export function Privacy() {
       <PageIntro label="Website information" title="Privacy policy.">
         <p>How Zolara Holdings Ltd handles information from website visits and inquiries.</p>
       </PageIntro>
-      <div className="shell privacy-copy">
+      <div className="shell document-copy">
         <section><h2>Website visits</h2><p>This website does not ask you to create an account or submit a web form. The hosting provider may process technical information such as your IP address and the pages requested to deliver and protect the site.</p></section>
         <section><h2>Email and phone inquiries</h2><p>If you contact us, we receive the contact information and message you choose to share. We use that information to respond and follow up on your inquiry. Please avoid sending sensitive personal information in your initial message.</p></section>
         <section><h2>Other websites</h2><p>Links to other websites, including the Beauty Studio booking site, lead to services with their own privacy practices.</p></section>
         <section><h2>Privacy questions and requests</h2><p>Contact <a href={`mailto:${email}`}>{email}</a> with questions or to ask about accessing or correcting your personal information. Ghana’s <a href="https://dpc.gov.gh/">Data Protection Commission</a> provides information about data protection rights.</p></section>
+      </div>
+    </>
+  );
+}
+
+export function ImageCredits() {
+  return (
+    <>
+      <PageIntro label="Website information" title="Image credits.">
+        <p>Sources and licences for the architectural photographs used on this website.</p>
+      </PageIntro>
+      <div className="shell document-copy">
+        {Object.values(architecture).map(photo => (
+          <section key={photo.file}>
+            <h2>{photo.name}</h2>
+            <p><a href={photo.source}>Original photograph by {photo.credit}</a>. The original and the versions displayed here are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+            <p>{photo.edits}</p>
+          </section>
+        ))}
       </div>
     </>
   );

@@ -170,15 +170,11 @@ main:focus { outline: 0; }
 .hero .architecture { padding-top: .4rem; border-top: 3px solid var(--bronze); }
 .hero .architecture img { aspect-ratio: 1.24; }
 .architecture figcaption {
-  padding-top: .63rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: .2rem .8rem;
   color: var(--muted);
-  font-size: .78rem;
+  font-size: .8125rem;
+  font-weight: 700;
+  padding-top: .7rem;
 }
-.architecture figcaption > span:first-child { font-weight: 700; }
 .intro-band { background: var(--soft-green); border-block: 1px solid var(--line); padding-block: clamp(2.75rem, 5vw, 5rem); }
 .intro-grid { display: grid; grid-template-columns: .56fr 1.65fr .85fr; align-items: start; gap: clamp(1.2rem, 3vw, 3rem); }
 .intro-grid .eyebrow { padding-top: .25rem; }
@@ -227,7 +223,9 @@ main:focus { outline: 0; }
 .footer-main nav a { text-decoration: none; }
 .footer-main nav a:hover { text-decoration: underline; }
 .footer-email { overflow-wrap: anywhere; }
-.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: .8rem; border-top: 1px solid #5a6860; padding-block: .45rem; color: #ced4ca; font-size: .825rem; }
+.footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .8rem; border-top: 1px solid #5a6860; padding-block: .45rem; color: #ced4ca; font-size: .825rem; }
+
+.footer-utility { display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
 
 .page-intro {
   display: grid;
@@ -282,10 +280,10 @@ main:focus { outline: 0; }
 .contact-details h3 { font: 700 .95rem/1.4 var(--sans); letter-spacing: normal; }
 .contact-details a { display: flex; min-height: 44px; align-items: center; width: fit-content; }
 .contact-details p { margin-top: .35rem; }
-.privacy-copy { max-width: 49rem; padding-block: clamp(2.5rem, 5vw, 5rem) var(--section); }
-.privacy-copy section + section { border-top: 1px solid var(--line); margin-top: 1.6rem; padding-top: 1.6rem; }
-.privacy-copy h2 { font-size: clamp(1.8rem, 4vw, 2.9rem); }
-.privacy-copy p { margin-top: .55rem; color: var(--muted); overflow-wrap: anywhere; }
+.document-copy { max-width: 49rem; padding-block: clamp(2.5rem, 5vw, 5rem) var(--section); }
+.document-copy section + section { border-top: 1px solid var(--line); margin-top: 1.6rem; padding-top: 1.6rem; }
+.document-copy h2 { font-size: clamp(1.8rem, 4vw, 2.9rem); }
+.document-copy p { margin-top: .55rem; color: var(--muted); overflow-wrap: anywhere; }
 
 @media (max-width: 1050px) {
   .hero { align-items: start; }

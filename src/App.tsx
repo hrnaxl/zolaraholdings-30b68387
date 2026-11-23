@@ -1,7 +1,7 @@
 import { SiteLayout } from "./components/SiteLayout";
 import { type PagePath } from "./content";
 import Home from "./pages/Home";
-import { About, BeautyStudio, Businesses, Contact, Leadership, NotFound, Privacy } from "./pages/CompanyPages";
+import { About, BeautyStudio, Businesses, Contact, ImageCredits, Leadership, NotFound, Privacy } from "./pages/CompanyPages";
 
 const routes = {
   "/": Home,
@@ -11,6 +11,7 @@ const routes = {
   "/leadership/": Leadership,
   "/contact/": Contact,
   "/privacy-policy/": Privacy,
+  "/image-credits/": ImageCredits,
 } satisfies Record<PagePath, () => React.JSX.Element>;
 
 export default function App({ path }: { path: PagePath | null }) {

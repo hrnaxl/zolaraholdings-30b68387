@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { approach } from "../content";
+import { approach, architecture } from "../content";
 
 export function TextLink({ href, children }: { href: string; children: ReactNode }) {
   return <a className="text-link" href={href}>{children}</a>;
@@ -43,25 +43,6 @@ export function Approach({ dark = false }: { dark?: boolean }) {
   );
 }
 
-const architecture = {
-  theatre: {
-    file: "theatre",
-    name: "National Theatre, Accra, Ghana",
-    alt: "Angular concrete facade of the National Theatre in Accra",
-    source: "https://commons.wikimedia.org/wiki/File:National_Theatre_-_Ghana.jpg",
-    credit: "Fquasie",
-    edits: "Cropped and colour adjusted",
-  },
-  airport: {
-    file: "accra",
-    name: "Airport City, Accra, Ghana",
-    alt: "Commercial buildings at Airport City in Accra",
-    source: "https://commons.wikimedia.org/wiki/File:Accra_Skyline_-_Ghana.jpg",
-    credit: "Synth85",
-    edits: "Cropped and colour adjusted",
-  },
-} as const;
-
 export function ArchitecturePhoto({ subject, eager = false }: {
   subject: keyof typeof architecture;
   eager?: boolean;
@@ -81,10 +62,7 @@ export function ArchitecturePhoto({ subject, eager = false }: {
         decoding="async"
         alt={photo.alt}
       />
-      <figcaption>
-        <span>{photo.name}</span>
-        <span><a href={photo.source}>{photo.credit}</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · {photo.edits}</span>
-      </figcaption>
+      <figcaption>{photo.name}</figcaption>
     </figure>
   );
 }

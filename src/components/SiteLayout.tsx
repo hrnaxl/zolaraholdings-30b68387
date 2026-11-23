@@ -54,7 +54,10 @@ export function SiteLayout({ path, children }: { path: PagePath | null; children
           </div>
           <div className="footer-bottom">
             <span>© {company}</span>
-            <a href="/privacy-policy/">Privacy policy</a>
+            <div className="footer-utility">
+              <a href="/privacy-policy/">Privacy policy</a>
+              <a href="/image-credits/">Image credits</a>
+            </div>
           </div>
         </div>
       </footer>
