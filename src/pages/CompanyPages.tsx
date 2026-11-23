@@ -5,7 +5,7 @@ export function About() {
   return (
     <>
       <PageIntro label="About Zolara" title="Ownership over the long term.">
-        <p>Zolara Holdings is a Ghanaian holding company based in Tamale. We develop, own and operate businesses with a long-term view.</p>
+        <p>Zolara Holdings Ltd is a Ghanaian holding company based in Tamale. We develop, own and operate businesses with a long-term view.</p>
       </PageIntro>
       <section className="shell origin-story">
         <div><p className="eyebrow">Our beginnings</p><h2>From Tamale.</h2><p>We began in Tamale, where running a customer-facing business gave us firsthand experience setting service standards and building a team in Northern Ghana.</p><TextLink href="/businesses/">Explore the portfolio</TextLink></div>

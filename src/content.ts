@@ -5,7 +5,7 @@ export const salonUrl = "https://www.zolarasalon.com/";
 export const founder = {
   name: "Haruna Salifu",
   role: "Founder & Executive Director",
-  introduction: "Haruna Salifu founded Zolara Holdings to build and operate businesses in Ghana for the long term. He guides where the group invests, how it supports its businesses and when it is ready to expand.",
+  introduction: "Haruna Salifu founded Zolara Holdings Ltd to build and operate businesses in Ghana for the long term. He guides where the group invests, how it supports its businesses and when it is ready to expand.",
 };
 
 export const navigation = [
@@ -18,15 +18,15 @@ export const navigation = [
 export const pages = {
   "/": {
     title: "Zolara Holdings Ltd | Long-term business ownership in Ghana",
-    description: "Zolara Holdings is a Ghanaian holding company based in Tamale. We build, own and operate businesses for the long term.",
+    description: "Zolara Holdings Ltd is a Ghanaian holding company based in Tamale. We build, own and operate businesses for the long term.",
   },
   "/about/": {
     title: "About Zolara | Zolara Holdings Ltd",
-    description: "The purpose and operating philosophy of Zolara Holdings, a Ghanaian holding company with a long-term approach to business ownership.",
+    description: "The purpose and operating philosophy of Zolara Holdings Ltd, a Ghanaian holding company with a long-term approach to business ownership.",
   },
   "/businesses/": {
     title: "Our Businesses | Zolara Holdings Ltd",
-    description: "Explore Zolara Holdings’ current operations and the sectors we are considering for future growth.",
+    description: "Explore current operations at Zolara Holdings Ltd and the sectors we are considering for future growth.",
   },
   "/businesses/beauty-studio/": {
     title: "Zolara Beauty Studio | Zolara Holdings Ltd",
@@ -38,11 +38,11 @@ export const pages = {
   },
   "/contact/": {
     title: "Contact | Zolara Holdings Ltd",
-    description: "Contact Zolara Holdings in Tamale, Ghana, for business and partnership inquiries.",
+    description: "Contact Zolara Holdings Ltd in Tamale, Ghana, for business and partnership inquiries.",
   },
   "/privacy-policy/": {
     title: "Privacy Policy | Zolara Holdings Ltd",
-    description: "Learn how Zolara Holdings handles information from website visits and email inquiries.",
+    description: "Learn how Zolara Holdings Ltd handles information from website visits and email inquiries.",
   },
 } as const;
 

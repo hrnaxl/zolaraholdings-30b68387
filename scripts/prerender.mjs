@@ -4,7 +4,7 @@ import { organization, origin, pages, render } from "../node_modules/.cache/zola
 
 const template = await readFile("dist/index.html", "utf8");
 const noIndex = process.env.ZOLARA_REVIEW === "1" || process.env.VERCEL_ENV === "preview";
-const image = origin + "/social-preview-zh.jpg";
+const image = origin + "/social-preview-ltd.jpg";
 
 function escapeHtml(text) {
   return text.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -19,14 +19,14 @@ function pageHtml(path, metadata) {
     ...(path ? [
       `<link rel="canonical" href="${canonical}" />`,
       '<meta property="og:type" content="website" />',
-      '<meta property="og:site_name" content="Zolara Holdings" />',
+      '<meta property="og:site_name" content="Zolara Holdings Ltd" />',
       `<meta property="og:title" content="${title}" />`,
       `<meta property="og:description" content="${description}" />`,
       `<meta property="og:url" content="${canonical}" />`,
       `<meta property="og:image" content="${image}" />`,
       '<meta property="og:image:width" content="1200" />',
       '<meta property="og:image:height" content="630" />',
-      '<meta property="og:image:alt" content="Zolara Holdings wordmark and official gold ZH monogram" />',
+      '<meta property="og:image:alt" content="Zolara Holdings Ltd wordmark and official gold ZH monogram" />',
       '<meta name="twitter:card" content="summary_large_image" />',
     ] : []),
     ...(noIndex || !path ? ['<meta name="robots" content="noindex, nofollow" />'] : []),

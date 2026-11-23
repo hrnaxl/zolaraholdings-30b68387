@@ -5,7 +5,7 @@ function Brand() {
   return (
     <a className="brand" href="/">
       <img src="/brand-zh.webp" width="44" height="44" alt="" />
-      <span className="brand-type">Zolara{" "}<span>Holdings</span></span>
+      <span className="brand-type">Zolara{" "}<span>Holdings Ltd</span></span>
     </a>
   );
 }
